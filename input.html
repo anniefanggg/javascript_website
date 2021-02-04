@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Mini Website </title>
+    <meta charset="utf-8"></meta>
+    <script defer src="myScript.js"></script>
+  </head>
+  <body>
+    <div id="myDiv">
+      <p> Choose <strong>carefully</strong>.
+        <br>
+        <label for='fchoice'>Cats or Dogs?</label>
+        <input id='fchoice' name='fchoice' type='text' />
+        <br />
+        <label for='schoice'>Cookies or Brownies?</label>
+        <input id='schoice' name='schoice' type='text' />
+        <br>
+      <button onclick='myClick()'>See if you chose correctly</button>
+      </p>
+    </div>
+
+    <div id="myRadio">
+      <p> Did you choose correctly?
+        <br>
+        <input type="radio" id="yes" name="answer" value="yes">
+        <label for='yes'>Yes</label>
+        <input type="radio" id="no" name="answer" value="no">
+        <label for='no'>No</label>
+        <br>
+      <button onclick='mySecondClick()'>Submit</button>
+      </p>
+    </div>
+
+    <div id="myCheckbox">
+      <p>What were some emotions you felt about this test?
+        <br>
+        <input type="checkbox" id="emotion1" name="emotion1" value="happy">
+        <label for="emotion1">Happy</label><br />
+        <input type="checkbox" id="emotion2" name="emotion2" value="confused">
+        <label for="emotion2">Confused</label><br />
+        <input type="checkbox" id="emotion3" name="emotion3" value="horrified">
+        <label for="emotion3">Horrified</label><br />
+      <button onclick='myThirdClick()'>Submit</button>
+      </p>
+    </div>
+
+    <div id="myResults">
+      <p>In case you have bad memory, would you like to see your answers to this test?
+        <br>
+        <input type="radio" id="result" name="secondAnswer" value="result">
+        <label for='result'>Yes</label>
+        <input type="radio" id="noResult" name="secondAnswer" value="noResult">
+        <label for='noResult'>No</label>
+        <br>
+      <button onclick='myFourthClick()'>Submit</button>
+      </p>
+  </body>
+</html>
